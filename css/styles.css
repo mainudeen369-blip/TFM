@@ -107,7 +107,7 @@ button, input, select { font: inherit; }
   animation: spark 4.2s ease-in-out infinite;
 }
 .wordmark { display: flex; flex-direction: column; line-height: 1; font-family: var(--serif); }
-.wordmark span { font-size: 0.95rem; font-weight: 500; letter-spacing: 0.01em; }
+.wordmark span { font-size: 1.12rem; font-weight: 560; letter-spacing: 0.01em; }
 .wordmark em {
   font-style: italic;
   background: linear-gradient(100deg, #f7e7c3 0%, #fff 42%, #e7c77a 58%, #f7e7c3 100%);
@@ -117,7 +117,7 @@ button, input, select { font: inherit; }
   color: transparent;
   animation: shine 4.5s linear infinite;
 }
-.wordmark strong { font-size: 1.15rem; font-weight: 640; letter-spacing: -0.02em; }
+.wordmark strong { font-size: 1rem; font-weight: 500; letter-spacing: -0.02em; }
 .site-header.is-scrolled .wordmark em {
   background-image: linear-gradient(100deg, #6d1b2a 0%, #c6a15b 45%, #6d1b2a 100%);
 }
@@ -189,8 +189,10 @@ h1 { font-size: clamp(3.2rem, 7vw, 6.4rem); margin: 0.4rem 0 1rem; }
   margin: 0.15rem 0 0.6rem;
 }
 .hero-title span { display: block; animation: title-in 0.9s ease both; }
+.hero-title span:nth-child(1),
+.hero-title span:nth-child(2) { font-size: 1.08em; }
 .hero-title span:nth-child(2) { animation-delay: 0.12s; }
-.hero-title span:nth-child(3) { animation-delay: 0.22s; }
+.hero-title span:nth-child(3) { font-size: 0.88em; animation-delay: 0.22s; }
 .hero-title .shine {
   font-style: italic;
   background: linear-gradient(100deg, #f7e7c3 0%, #fff 40%, #e7c77a 55%, #f7e7c3 100%);
@@ -514,8 +516,8 @@ h2 { font-size: clamp(2.4rem, 4vw, 4.2rem); margin: 0.3rem 0 0.8rem; }
 @media (max-width: 760px) {
   .site-header { padding: 0.7rem 1rem; }
   .couple-mark { width: 42px; height: 38px; }
-  .wordmark span { font-size: 0.78rem; }
-  .wordmark strong { font-size: 1rem; }
+  .wordmark span { font-size: 0.92rem; }
+  .wordmark strong { font-size: 0.8rem; }
   .hero {
     min-height: 100svh;
     min-height: 100dvh;
