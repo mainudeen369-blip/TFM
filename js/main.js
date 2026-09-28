@@ -1,3 +1,9 @@
+if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+if (!location.hash) window.scrollTo(0, 0);
+window.addEventListener("pageshow", () => {
+  if (!location.hash) window.scrollTo(0, 0);
+});
+
 const header = document.querySelector("[data-header]");
 const toggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
