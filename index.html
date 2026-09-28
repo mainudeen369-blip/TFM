@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TFM — Tamil Friendly Matrimony</title>
+  <title>Tamil Friendly Matrimony</title>
   <meta name="description" content="Tamil Friendly Matrimony for Hindu families of every caste. Thousands of profiles across Tamil Nadu and the world, with the same respect for every community." />
-  <meta property="og:title" content="TFM — Tamil Friendly Matrimony" />
+  <meta property="og:title" content="Tamil Friendly Matrimony" />
   <meta property="og:description" content="Every caste. One courtyard. Tamil Hindu matrimony with thousands of profiles." />
   <meta property="og:image" content="assets/tfm-hero.png" />
   <link rel="icon" href="assets/tfm-logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Noto+Serif+Tamil:wght@600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,640;1,9..144,500&family=Noto+Serif+Tamil:wght@600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -23,10 +23,25 @@
 
   <header class="site-header" data-header>
     <a class="brand" href="#top">
-      <span class="brand-seal"><img src="assets/tfm-logo.png" alt="" width="46" height="46" /></span>
-      <span>
-        <strong>TFM</strong>
-        <small>Tamil Friendly Matrimony</small>
+      <span class="couple-mark" aria-hidden="true">
+        <svg class="couple-svg" viewBox="0 0 168 96">
+          <circle class="kolam-ring" cx="84" cy="46" r="34" />
+          <text class="tha" x="84" y="62">த</text>
+          <g class="walk walk-left">
+            <circle cx="18" cy="38" r="7" />
+            <path d="M6 50c2 16-2 34 12 40 14-6 16-24 12-40z" />
+          </g>
+          <g class="walk walk-right">
+            <circle cx="150" cy="38" r="7" />
+            <path d="M138 50h24v38h-24z" />
+          </g>
+          <path class="clasp" d="M28 72c22-12 90-12 112 0" />
+          <circle class="spark" cx="84" cy="66" r="2.4" />
+        </svg>
+      </span>
+      <span class="wordmark">
+        <span>Tamil <em>Friendly</em></span>
+        <strong>Matrimony</strong>
       </span>
     </a>
     <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
@@ -50,7 +65,29 @@
           <span class="ta">த</span>
           தமிழ் இந்து திருமணம் · every caste welcome
         </p>
-        <h1>The letter that begins <em>தமிழ்</em> can begin a wedding.</h1>
+        <div class="hero-seal" aria-hidden="true">
+          <svg class="couple-svg couple-svg-hero" viewBox="0 0 168 96">
+            <circle class="kolam-ring" cx="84" cy="46" r="34" />
+            <text class="tha" x="84" y="62">த</text>
+            <g class="walk walk-left">
+              <circle cx="18" cy="38" r="7" />
+              <path d="M6 50c2 16-2 34 12 40 14-6 16-24 12-40z" />
+            </g>
+            <g class="walk walk-right">
+              <circle cx="150" cy="38" r="7" />
+              <path d="M138 50h24v38h-24z" />
+            </g>
+            <path class="clasp" d="M28 72c22-12 90-12 112 0" />
+            <circle class="spark" cx="84" cy="66" r="2.4" />
+          </svg>
+          <p>Two people meet inside <span>த</span></p>
+        </div>
+        <h1 class="hero-title">
+          <span>Tamil</span>
+          <span class="shine">Friendly</span>
+          <span>Matrimony</span>
+        </h1>
+        <p class="hero-poem">The letter <span class="ta">த</span> is where two people meet — and a wedding can begin.</p>
         <p class="lede">
           Tamil Friendly Matrimony is a courtyard for Hindu families — Iyer and Iyengar,
           Mudaliar and Nadar, Chettiar, Gounder, Vanniyar, Thevar, Devendrakula Vellalar,
@@ -79,7 +116,7 @@
       </div>
     </div>
 
-    <section class="stats" aria-label="TFM in numbers">
+    <section class="stats" aria-label="In numbers">
       <article data-reveal>
         <strong data-count="52480">0</strong>
         <span>active Tamil Hindu profiles</span>
@@ -115,7 +152,7 @@
       </div>
       <div class="cards">
         <article class="card" data-side="bride" data-reveal>
-          <img src="assets/tfm-profile-meera.png" alt="Portrait of Meera, a sample TFM profile" />
+          <img src="assets/tfm-profile-meera.png" alt="Portrait of Meera, a sample profile" />
           <div class="card-body">
             <p class="card-meta">27 · Chennai · Product designer</p>
             <h3>Meera S.</h3>
@@ -123,7 +160,7 @@
           </div>
         </article>
         <article class="card" data-side="bride" data-reveal>
-          <img src="assets/tfm-profile-divya.png" alt="Portrait of Divya, a sample TFM profile" />
+          <img src="assets/tfm-profile-divya.png" alt="Portrait of Divya, a sample profile" />
           <div class="card-body">
             <p class="card-meta">31 · Madurai · Physician</p>
             <h3>Divya R.</h3>
@@ -131,7 +168,7 @@
           </div>
         </article>
         <article class="card" data-side="bride" data-reveal>
-          <img src="assets/tfm-profile-anitha.png" alt="Portrait of Anitha, a sample TFM profile" />
+          <img src="assets/tfm-profile-anitha.png" alt="Portrait of Anitha, a sample profile" />
           <div class="card-body">
             <p class="card-meta">25 · Thanjavur · Bharatanatyam dancer</p>
             <h3>Anitha K.</h3>
@@ -139,7 +176,7 @@
           </div>
         </article>
         <article class="card" data-side="groom" data-reveal>
-          <img src="assets/tfm-profile-arjun.png" alt="Portrait of Arjun, a sample TFM profile" />
+          <img src="assets/tfm-profile-arjun.png" alt="Portrait of Arjun, a sample profile" />
           <div class="card-body">
             <p class="card-meta">29 · Bengaluru · Data engineer</p>
             <h3>Arjun V.</h3>
@@ -147,7 +184,7 @@
           </div>
         </article>
         <article class="card" data-side="groom" data-reveal>
-          <img src="assets/tfm-profile-karthik.png" alt="Portrait of Karthik, a sample TFM profile" />
+          <img src="assets/tfm-profile-karthik.png" alt="Portrait of Karthik, a sample profile" />
           <div class="card-body">
             <p class="card-meta">33 · Coimbatore · Civil engineer</p>
             <h3>Karthik M.</h3>
@@ -155,7 +192,7 @@
           </div>
         </article>
         <article class="card" data-side="groom" data-reveal>
-          <img src="assets/tfm-profile-vignesh.png" alt="Portrait of Vignesh, a sample TFM profile" />
+          <img src="assets/tfm-profile-vignesh.png" alt="Portrait of Vignesh, a sample profile" />
           <div class="card-body">
             <p class="card-meta">26 · Singapore · Chef</p>
             <h3>Vignesh P.</h3>
@@ -163,7 +200,7 @@
           </div>
         </article>
       </div>
-      <p class="fineprint">These six faces are illustrated samples of the profiles families browse on TFM.</p>
+      <p class="fineprint">These six faces are illustrated samples of the profiles families browse here.</p>
     </section>
 
     <section class="promise">
@@ -190,7 +227,7 @@
         <p class="kicker">All castes. Equal standing.</p>
         <h2>ஒரே மரியாதை. எல்லா ஜாதியும்.</h2>
         <p>
-          TFM was made so a Tamil Hindu wedding does not begin with a closed list.
+          Tamil Friendly Matrimony was made so a Tamil Hindu wedding does not begin with a closed list.
           Brahmin, non-Brahmin, landowning communities, weaving communities,
           and communities that were kept at the edge of older matrimony offices —
           they share this kolam.
@@ -209,7 +246,7 @@
       <img src="assets/tfm-story.png" alt="A Tamil couple seated on temple steps in the evening" data-reveal />
       <blockquote data-reveal>
         <p class="kicker">From the courtyard</p>
-        <p class="quote">“Our families had never sat in the same marriage hall before. TFM did not ask us to erase where we came from. It only asked us to meet.”</p>
+        <p class="quote">“Our families had never sat in the same marriage hall before. Tamil Friendly Matrimony did not ask us to erase where we came from. It only asked us to meet.”</p>
         <footer>
           <strong>Lakshmi &amp; Surya</strong>
           <span>Kumbakonam and Madurai · married in Panguni</span>
@@ -245,7 +282,7 @@
       <div class="join-panel" data-reveal>
         <p class="kicker">Come in</p>
         <h2>Put your family’s name on the courtyard wall.</h2>
-        <p>Tell us who you are looking for. A TFM guide calls back to open the profile — bride, groom, or a parent searching for both.</p>
+        <p>Tell us who you are looking for. Request a call opens WhatsApp with what you typed, on the same number as <a href="https://friendlymatrimony.com">friendlymatrimony.com</a>.</p>
         <form data-join-form>
           <label>Your name
             <input name="name" required maxlength="80" autocomplete="name" />
@@ -266,18 +303,23 @@
           </label>
           <button class="btn btn-gold" type="submit">Request a call</button>
         </form>
-        <p class="thanks" data-thanks hidden>Thank you. We have your note. A guide will call this number to begin the profile.</p>
+        <p class="join-note">WhatsApp +91 63811 62823 · same line as Friendly Matrimony</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="contact">
     <div>
-      <img src="assets/tfm-logo.png" alt="" width="64" height="64" />
-      <strong>த · TFM</strong>
-      <p>Tamil Friendly Matrimony for Hindus of every caste.</p>
+      <p class="wordmark wordmark-footer"><span>Tamil <em>Friendly</em></span><strong>Matrimony</strong></p>
+      <p>Tamil Hindu matrimony for every caste.</p>
     </div>
-    <p class="footer-note">Sample portraits and stories on this page are illustrations for the brand. Live member photos are shared only with consent.</p>
+    <address>
+      <a href="https://friendlymatrimony.com">friendlymatrimony.com</a>
+      <a href="tel:+916381162823">+91 63811 62823</a>
+      <a href="mailto:info@friendlymatrimony.com">info@friendlymatrimony.com</a>
+      <a href="https://wa.me/916381162823" target="_blank" rel="noopener">WhatsApp</a>
+    </address>
+    <p class="footer-note">Sample portraits on this page are illustrations. Live member photos are shared only with consent. Calls and WhatsApp are handled by Friendly Matrimony.</p>
   </footer>
 
   <script src="js/main.js"></script>

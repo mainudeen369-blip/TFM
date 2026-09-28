@@ -86,7 +86,7 @@ filterButtons.forEach((button) => {
 });
 
 const form = document.querySelector("[data-join-form]");
-const thanks = document.querySelector("[data-thanks]");
+const whatsappNumber = "916381162823";
 
 form?.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -94,6 +94,15 @@ form?.addEventListener("submit", (event) => {
     form.reportValidity();
     return;
   }
-  form.hidden = true;
-  if (thanks) thanks.hidden = false;
+  const data = new FormData(form);
+  const text = [
+    "Hello Tamil Friendly Matrimony,",
+    "",
+    "I would like a call about a profile.",
+    `Name: ${data.get("name")}`,
+    `Mobile: ${data.get("phone")}`,
+    `Looking for: ${data.get("looking")}`,
+    `City: ${data.get("city")}`,
+  ].join("\n");
+  window.location.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 });
