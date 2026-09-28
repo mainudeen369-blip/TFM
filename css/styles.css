@@ -81,39 +81,29 @@ button, input, select { font: inherit; }
   backdrop-filter: blur(12px);
 }
 .brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; min-width: 0; }
-.couple-mark { width: 78px; height: 46px; flex: none; }
+.couple-mark { width: 52px; height: 46px; flex: none; }
 .couple-svg { width: 100%; height: 100%; overflow: visible; }
-.kolam-ring {
+.couple-svg path,
+.couple-svg circle {
   fill: none;
   stroke: currentColor;
-  stroke-width: 1;
-  stroke-dasharray: 2 5;
-  transform-origin: 84px 46px;
-  animation: spin 28s linear infinite;
-}
-.tha {
-  font-family: "Noto Serif Tamil", serif;
-  font-size: 46px;
-  text-anchor: middle;
-  fill: currentColor;
-}
-.walk { fill: currentColor; stroke: none; }
-.walk path { fill: currentColor; }
-.walk-left { animation: approach-left 3.2s ease-in-out infinite; }
-.walk-right { animation: approach-right 3.2s ease-in-out infinite; }
-.clasp {
-  fill: none;
-  stroke: #e7c77a;
-  stroke-width: 1.6;
+  stroke-width: 1.7;
   stroke-linecap: round;
-  stroke-dasharray: 160;
-  stroke-dashoffset: 160;
-  animation: clasp 3.2s ease-in-out infinite;
+  stroke-linejoin: round;
 }
-.spark {
-  fill: #fff4d2;
-  transform-origin: 84px 66px;
-  animation: spark 3.2s ease-in-out infinite;
+.arch {
+  stroke: #f0d48a;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130;
+  animation: clasp 4.2s ease-in-out infinite;
+}
+.person-left { animation: approach-left 4.2s ease-in-out infinite; }
+.person-right { animation: approach-right 4.2s ease-in-out infinite; }
+.ring {
+  stroke: #fff6df;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spark 4.2s ease-in-out infinite;
 }
 .wordmark { display: flex; flex-direction: column; line-height: 1; font-family: var(--serif); }
 .wordmark span { font-size: 0.95rem; font-weight: 500; letter-spacing: 0.01em; }
@@ -191,22 +181,6 @@ button, input, select { font: inherit; }
 }
 h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 0.98; }
 h1 { font-size: clamp(3.2rem, 7vw, 6.4rem); margin: 0.4rem 0 1rem; }
-.hero-seal {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin: 0.6rem 0 0.2rem;
-  color: var(--gold-soft);
-}
-.hero-seal .couple-svg { width: 176px; height: 100px; }
-.hero-seal p {
-  margin: 0;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.25rem;
-  letter-spacing: 0.01em;
-}
-.hero-seal span { font-family: var(--tamil); font-style: normal; font-size: 1.6rem; }
 .hero-title {
   display: flex;
   flex-direction: column;
@@ -347,11 +321,13 @@ h2 { font-size: clamp(2.4rem, 4vw, 4.2rem); margin: 0.3rem 0 0.8rem; }
   background: linear-gradient(180deg, #fff, var(--sand));
   border: 1px solid var(--line);
 }
-.ta-mark {
-  font-family: var(--tamil);
-  font-size: 2.4rem;
-  color: var(--gold);
+.mark-ring {
   display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  box-shadow: 0 0 0 5px rgba(198, 161, 91, 0.16);
   animation: pulse 3.4s ease-in-out infinite;
 }
 @keyframes pulse {
