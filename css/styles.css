@@ -455,6 +455,14 @@ h2 { font-size: clamp(2.4rem, 4vw, 4.2rem); margin: 0.3rem 0 0.8rem; }
   font-size: 1.25rem;
 }
 .site-footer address a { text-decoration: none; }
+.site-footer address span {
+  max-width: 22rem;
+  margin-top: 0.35rem;
+  color: #6d584c;
+  font-family: var(--sans, inherit);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
 .footer-note { max-width: 28rem; color: #6d584c; font-size: 0.88rem; align-self: end; }
 
 [data-reveal] { opacity: 0; transform: translateY(16px); }
