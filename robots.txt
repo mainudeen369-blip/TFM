@@ -1,0 +1,6 @@
+# Tamil Friendly Matrimony
+User-agent: *
+Allow: /
+
+Sitemap: https://tamilfriendlymatrimony.com/sitemap.xml
+Host: https://tamilfriendlymatrimony.com

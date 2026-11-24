@@ -19,6 +19,7 @@ window.addEventListener(
 toggle?.addEventListener("click", () => {
   const open = nav?.classList.toggle("is-open");
   toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
 });
 
 nav?.querySelectorAll("a").forEach((link) => {
@@ -83,7 +84,11 @@ const cards = document.querySelectorAll("[data-side]");
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const value = button.dataset.filter;
-    filterButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+    filterButtons.forEach((item) => {
+      const active = item === button;
+      item.classList.toggle("is-active", active);
+      item.setAttribute("aria-selected", active ? "true" : "false");
+    });
     cards.forEach((card) => {
       const show = value === "all" || card.dataset.side === value;
       card.hidden = !show;
